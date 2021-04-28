@@ -10,8 +10,8 @@
     --dfNodeBorderSize: 1px;
     --dfNodeBorderColor: rgba(69, 66, 66, 1);
     --dfNodeBorderRadius: 4px;
-    --dfNodeMinHeight: 25px;
-    --dfNodeMinWidth: 100px;
+    --dfNodeMinHeight: 60px;
+    --dfNodeMinWidth: 180px;
     --dfNodePaddingTop: 15px;
     --dfNodePaddingBottom: 15px;
     --dfNodeBoxShadowHL: 0px;

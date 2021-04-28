@@ -6,7 +6,9 @@ const messages = {
             customization: 'Customization',
             administration: 'Administration',
             menu: 'Menu',
-            tree: 'Tree'
+            trees: 'Trees',
+            treeEditor: 'Tree editor',
+            treeViewer: 'Tree viewer'
         }
     },
     es: {
@@ -15,7 +17,9 @@ const messages = {
             customization: 'Personalización',
             administration: 'Administración',
             menu: 'Menu',
-            tree: 'Tree'
+            trees: 'Trees',
+            treeEditor: 'Tree editor',
+            treeViewer: 'Tree viewer'
         }
     },
     pt: {
@@ -24,7 +28,9 @@ const messages = {
             customization: 'Costumização',
             administration: 'administração',
             menu: 'Menu',
-            tree: 'Tree'
+            trees: 'Trees',
+            treeEditor: 'Tree editor',
+            treeViewer: 'Tree viewer'
         }
     }
 }

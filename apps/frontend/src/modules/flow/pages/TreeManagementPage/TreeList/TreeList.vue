@@ -36,7 +36,7 @@
         </template>
 
         <template v-slot:item.action="{ item }">
-          <show-button @click="$emit('show', item)"/>
+          <show-button @click="$router.push({name: 'TreeViewPage', params: {id: item.id}})"/>
           <v-btn x-small color="blue" icon :to="{name: 'TreeEditorPage', params: {id: item.id}}">
             <v-icon>edit</v-icon>
           </v-btn>

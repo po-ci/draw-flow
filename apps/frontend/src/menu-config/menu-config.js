@@ -12,8 +12,18 @@ export default [
             },
             {
                 icon: 'account_tree',
-                text: 'menu.tree',
+                text: 'menu.trees',
                 link: {name: "TreeManagementPage"},
+            },
+            {
+                icon: 'account_tree',
+                text: 'menu.treeEditor',
+                link: {name: "TreeEditorPage"},
+            },
+            {
+                icon: 'account_tree',
+                text: 'menu.treeViewer',
+                link: {name: "TreeViewPage"},
             },
         ]
     },
