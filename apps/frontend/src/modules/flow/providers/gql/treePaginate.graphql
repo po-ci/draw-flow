@@ -1,0 +1,11 @@
+query treePaginate( $pageNumber: Int, $itemsPerPage:Int, $search: String, $orderBy: String, $orderDesc: Boolean){
+    treePaginate( pageNumber: $pageNumber, itemsPerPage: $itemsPerPage, search: $search, orderBy: $orderBy, orderDesc: $orderDesc){
+        totalItems
+        page
+        items{
+          id
+          name
+        json
+        }
+    }
+}

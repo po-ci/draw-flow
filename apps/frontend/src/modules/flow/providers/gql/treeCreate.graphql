@@ -1,0 +1,8 @@
+mutation treeCreate($name:String!, $json:JSON){
+    treeCreate(input: {name: $name, json: $json }){
+        id
+        name
+        json
+    }
+}
+

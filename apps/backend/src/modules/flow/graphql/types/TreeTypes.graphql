@@ -1,0 +1,39 @@
+
+        
+        
+type Tree{
+id: ID!
+ name: String!
+ json: JSON
+}
+
+type TreePaginated{
+    totalItems: Int!
+    page: Int!
+    items: [Tree!]
+}
+
+type Query {
+    treeFind(id:ID!): Tree
+    treeFetch: [Tree]
+    treePaginate( pageNumber: Int, itemsPerPage: Int, search: String, orderBy: String, orderDesc: Boolean): TreePaginated  
+    
+    
+}
+
+input TreeInput{
+    name: String!
+ json: JSON
+}
+
+type TreeDelete{
+    id: ID!
+    success: Boolean!
+}
+
+
+type Mutation {
+    treeCreate(input: TreeInput): Tree
+    treeUpdate(id: ID!, input: TreeInput): Tree
+    treeDelete(id: ID!): TreeDelete!
+}

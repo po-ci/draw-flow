@@ -1,10 +1,21 @@
-
 export default [
     {
-        icon: 'home',
-        text:'base.home',
-        link: { name: "home" },
-        panel: false
+        icon: 'person',
+        text: 'menu.menu',
+        panel: false,
+        children: [
+
+            {
+                icon: 'home',
+                text: 'base.home',
+                link: {name: "home"},
+            },
+            {
+                icon: 'account_tree',
+                text: 'menu.tree',
+                link: {name: "TreeManagementPage"},
+            },
+        ]
     },
 
     {
@@ -16,35 +27,35 @@ export default [
             {
                 icon: 'assignment_ind',
                 text: 'menu.userdashboard',
-                link: { name: "userDashboard" },
+                link: {name: "userDashboard"},
                 panel: false,
                 permission: 'SECURITY_DASHBOARD_SHOW'
             },
             {
                 icon: 'settings_applications',
                 text: 'menu.customization',
-                link: { name: "customization" },
+                link: {name: "customization"},
                 panel: false,
                 permission: 'CUSTOMIZATION_SHOW'
             },
             {
                 icon: 'assignment_ind',
                 text: 'user.title',
-                link: { name: "userManagement" },
+                link: {name: "userManagement"},
                 panel: false,
                 permission: 'SECURITY_USER_SHOW'
             },
             {
                 icon: 'verified_user',
                 text: 'role.title',
-                link: { name: "roleManagement" },
+                link: {name: "roleManagement"},
                 panel: false,
                 permission: 'SECURITY_ROLE_SHOW'
             },
             {
                 icon: 'group',
                 text: 'group.title',
-                link: { name: "groupManagement" },
+                link: {name: "groupManagement"},
                 panel: false,
                 permission: 'SECURITY_GROUP_SHOW'
             },
@@ -54,7 +65,7 @@ export default [
     {
         icon: 'perm_phone_msg',
         text: 'base.about',
-        link: { name: "about" },
+        link: {name: "about"},
         panel: false,
     },
 

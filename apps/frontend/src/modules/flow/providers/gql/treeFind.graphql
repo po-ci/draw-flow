@@ -1,0 +1,7 @@
+query treeFind($id:ID!){
+    treeFind(id:$id){
+        id
+        name
+        json
+    }
+}

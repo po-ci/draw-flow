@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "front": "vue-cli-service serve",
     "build": "vue-cli-service build --dest dist --mode production",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
@@ -35,7 +35,8 @@
     "vue-router": "^3.3.2",
     "vuetify": "^2.3.4",
     "vuex": "^3.4.0",
-    "vuex-persistedstate": "^3.0.1"
+    "vuex-persistedstate": "^3.0.1",
+    "drawflow": "^0.0.40"
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",

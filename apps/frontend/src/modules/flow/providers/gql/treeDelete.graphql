@@ -1,0 +1,7 @@
+mutation treeDelete($id: ID!){
+    treeDelete(id: $id){
+        id
+        success
+    }
+}
+

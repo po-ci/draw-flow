@@ -6,12 +6,15 @@ import {types as notificationTypes,resolvers as notificationResolvers} from '@dr
 
 //BASE RESOLVERS
 import {resolvers as baseResolvers } from './modules/base/graphql'
+import {resolvers as flowResolvers } from './modules/flow/graphql'
 //BASE TYPEDEFS
 import {types as baseTypes} from './modules/base/graphql'
+import {types as flowTypes} from './modules/flow/graphql'
 
 
 export const resolvers = mergeResolvers([
     baseResolvers,
+    flowResolvers,
     securityResolvers,
     notificationResolvers,
     customResolvers
@@ -19,6 +22,7 @@ export const resolvers = mergeResolvers([
 
 export const typeDefs = mergeTypes([
     baseTypes,
+    flowTypes,
     securityTypes,
     notificationTypes,
     customTypes

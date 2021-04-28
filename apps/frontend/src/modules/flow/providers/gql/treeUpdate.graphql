@@ -1,0 +1,8 @@
+mutation treeUpdate($id: ID!, $name:String!, $json:JSON){
+    treeUpdate(id: $id, input: {name: $name, json: $json }){
+        id
+        name
+        json
+    }
+}
+

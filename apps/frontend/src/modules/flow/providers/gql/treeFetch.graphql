@@ -1,0 +1,8 @@
+query treeFetch{
+    treeFetch{
+        id
+        name
+        json
+    }
+}
+
