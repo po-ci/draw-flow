@@ -29,6 +29,8 @@
         df-name
         v-model="name"
     />
+
+
     <br v-if="editing">
     <select
         :hidden="!editing"

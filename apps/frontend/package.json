@@ -36,7 +36,8 @@
     "vuetify": "^2.3.4",
     "vuex": "^3.4.0",
     "vuex-persistedstate": "^3.0.1",
-    "drawflow": "^0.0.40"
+    "drawflow": "^0.0.40",
+    "axios": "^0.27.2"
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",

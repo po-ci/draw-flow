@@ -84,8 +84,11 @@
 <script>
 import Vue from 'vue'
 import Drawflow from 'drawflow'
+
 import StateNode from "../../nodes/StateNode";
 import RuleNode from "../../nodes/RuleNode";
+import QueueNode from "../../nodes/QueueNode";
+
 import 'drawflow/dist/drawflow.min.css'
 import '@/assets/css/tree.css'
 import TreeProvider from "@/modules/flow/providers/TreeProvider";
@@ -107,6 +110,10 @@ export default {
         {
           icon: 'rule',
           type: 'RuleNode'
+        },
+        {
+          icon: 'cloud_queue',
+          type: 'QueueNode'
         }
       ],
       loading: false,
@@ -155,6 +162,7 @@ export default {
       const options = {};
       this.editor.registerNode('StateNode', StateNode, props, options);
       this.editor.registerNode('RuleNode', RuleNode, props, options);
+      this.editor.registerNode('QueueNode', QueueNode, props, options);
       this.editor.start()
 
 
@@ -191,6 +199,8 @@ export default {
               this.tree.id = r.data.treeFind.id
               this.tree.json = r.data.treeFind.json
               this.tree.name = r.data.treeFind.name
+
+              console.log("JSON", this.tree.json)
               resolve(this.tree)
             })
             .catch(e => reject(e))
@@ -266,14 +276,13 @@ export default {
 
       switch (name) {
         case 'StateNode':
-          this.editor.addNode('StateNode', 1, 1, pos_x, pos_y, '', {
-            'name': '',
-            description: '',
-            area: ''
-          }, 'StateNode', 'vue');
+          this.editor.addNode('StateNode', 1, 1, pos_x, pos_y, '', {'name': '', description: '', area: ''}, 'StateNode', 'vue');
           break;
         case 'RuleNode':
           this.editor.addNode('RuleNode', 1, 2, pos_x, pos_y, '', {'name': ''}, 'RuleNode', 'vue');
+          break;
+        case 'QueueNode':
+          this.editor.addNode('QueueNode', 1, 2, pos_x, pos_y, '', {queue: ''}, 'QueueNode', 'vue');
           break;
 
       }
