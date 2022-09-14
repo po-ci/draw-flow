@@ -39,7 +39,7 @@ export default {
   },
   methods:{
     fetchQueues(){
-      axios.get('https://devmcapi.sondeosglobal.com/topics?companyId=1&accessToken=6dd61b6f-a5df-47cc-a6a7-1d127f41e2ec')
+      axios.get('https://devmcapi.sondeosglobal.com/topics?companyId=1&accessToken=PonerTokenVigenteAca')
           .then(r => {
             this.queues = r.data.data.topics
             this.ready = true
