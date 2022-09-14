@@ -199,8 +199,6 @@ export default {
               this.tree.id = r.data.treeFind.id
               this.tree.json = r.data.treeFind.json
               this.tree.name = r.data.treeFind.name
-
-              console.log("JSON", this.tree.json)
               resolve(this.tree)
             })
             .catch(e => reject(e))
